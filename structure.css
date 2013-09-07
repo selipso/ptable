@@ -1,0 +1,124 @@
+@font-face
+{
+    font-family: AvenirNext;
+    src:url('avenir_next.ttf');
+}
+
+@font-face
+{
+    font-family: AvenirCondensed;
+    src:url('avenir_next_condensed.ttf');
+}
+
+@font-face
+{
+    font-family: Arvo;
+    src:url('Arvo-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: opensans;
+    src:url('opensansb.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header{
+    width:5%;
+}
+
+#container
+{
+    background-color: rgb(255, 255, 255);
+    min-width: 155em;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    padding-top: 1em;
+}
+
+#periodic{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+p{
+    display: inline;
+    width: 8em;
+}
+
+body,html
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.element{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 8em;
+    width: 8em;
+    float: left;
+    z-index: 1;
+}
+
+.breakname{
+    width:inherit;
+    padding-top:0.1em;
+    float:none;
+    font-size: 1.5em;
+    font-family: opensans;
+    text-align: center;
+}
+
+.breakrange{
+    float:none;
+    font-size: 2.5em;
+    font-family: opensans;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.anumber{
+    font-family:Arvo;
+    top: 0.2em;
+    position:relative;
+    vertical-align:super;
+    font-size:1.8em;
+    float:left;
+    padding-left:0.2em;
+}
+
+.symbol{
+    position: relative;
+    max-height: 8em;
+    width: inherit;
+    display: inline-block;
+    font-family: opensans;
+    font-size: 4.2em;
+    float: none;
+    text-align: center;
+}
+
+.amass{
+    font-family:opensans;
+    position:relative;
+    vertical-align:super;
+    font-size:1.8em;
+    float:right;
+    padding-right:0.2em;
+}
+
+.empty{
+    position: relative;
+    height: 8em;
+    width: 8em;
+    float:left;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    z-index: 1;
+}
