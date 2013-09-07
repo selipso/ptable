@@ -1,25 +1,13 @@
 @font-face
 {
-    font-family: AvenirNext;
-    src:url('avenir_next.ttf');
-}
-
-@font-face
-{
-    font-family: AvenirCondensed;
-    src:url('avenir_next_condensed.ttf');
-}
-
-@font-face
-{
     font-family: Arvo;
-    src:url('Arvo-Regular.ttf');
+    src:url('http://fonts.googleapis.com/css?family=Arvo');
 }
 
 @font-face
 {
     font-family: opensans;
-    src:url('opensansb.ttf');
+    src:url('http://fonts.googleapis.com/css?family=Open+Sans:600');
     font-weight: normal;
     font-style: normal;
 }
