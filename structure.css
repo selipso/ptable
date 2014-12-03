@@ -1,15 +1,31 @@
 @font-face
 {
+    font-family: AvenirNext;
+    src:url('avenir_next.ttf');
+}
+
+@font-face
+{
+    font-family: AvenirCondensed;
+    src:url('avenir_next_condensed.ttf');
+}
+
+@font-face
+{
     font-family: Arvo;
-    src:url('http://fonts.googleapis.com/css?family=Arvo');
+    src:url('Arvo-Regular.ttf');
 }
 
 @font-face
 {
     font-family: opensans;
-    src:url('http://fonts.googleapis.com/css?family=Open+Sans:600');
+    src:url('opensansb.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+img{
+    height: 6em;
 }
 
 #header{
@@ -23,12 +39,23 @@
     height: 100%;
     overflow: auto;
     position: relative;
-    padding-top: 1em;
 }
 
 #periodic{
     margin-left: 1em;
     margin-bottom: 1em;
+}
+
+#title{
+    font-family: AvenirNext;
+    text-align: center;
+    font-size:3em;
+    margin-right: 4em;
+    margin-left: 4.5em;
+}
+
+#dropdown{
+    padding-bottom: 2em;
 }
 
 p{
@@ -59,44 +86,44 @@ body,html
     padding-top:0.1em;
     float:none;
     font-size: 1.5em;
-    font-family: opensans;
+    font-family: AvenirCondensed;
     text-align: center;
 }
 
 .breakrange{
     float:none;
     font-size: 2.5em;
-    font-family: opensans;
+    font-family: AvenirCondensed;
     text-align:center;
     vertical-align: middle;
 }
 
 .anumber{
     font-family:Arvo;
-    top: 0.2em;
+    top: 0.1em;
     position:relative;
     vertical-align:super;
-    font-size:1.8em;
+    font-size:1.7em;
     float:left;
     padding-left:0.2em;
 }
 
 .symbol{
-    position: relative;
     max-height: 8em;
     width: inherit;
     display: inline-block;
-    font-family: opensans;
-    font-size: 4.2em;
+    font-family: AvenirCondensed;
+    font-size: 4.5em;
     float: none;
     text-align: center;
 }
 
 .amass{
-    font-family:opensans;
+    font-family:AvenirCondensed;
+    top: 0.1em;
     position:relative;
     vertical-align:super;
-    font-size:1.8em;
+    font-size:1.7em;
     float:right;
     padding-right:0.2em;
 }
@@ -109,4 +136,64 @@ body,html
     border: 1px solid transparent;
     border-radius: 3px;
     z-index: 1;
+}
+
+#infocell{
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+    width: 81em;
+    height: 24em;
+    border: 2px solid black;
+    left: 18em;
+    padding: 0.5em 1em 0.5em 1em;
+    top: 2px;
+}
+
+.name{
+    font-family: opensans;
+    font-size: 3em;
+    text-align: center;
+}
+
+#symbol{
+    font-family: AvenirNext;
+    font-size: 9em;
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+    font-family: AvenirCondensed;
+    font-size: 3.1em;
+}
+
+.ienergy{
+    font-family: AvenirCondensed;
+    font-size: 2.9em;
+}
+
+.legend{
+    position: absolute;
+    z-index: 3;
+    bottom: 24.5em;
+    left: 50em;
+}
+
+.label{
+    font-size: 4em;
+    font-family: Arvo;
+    vertical-align: top;
+}
+
+#legend{
+    display:none;
+}
+
+#copyright{
+    float:right;
+    font-size: 2em;
+    font-family: Arvo;
+    margin-right: 3em;
 }

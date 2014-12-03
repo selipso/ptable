@@ -5,20 +5,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="structure.css" />
 	<link rel="stylesheet" href="colors.css" />
-	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-    <script src = "script_on_ready.js"></script>
 </head> 
 <body id="body"> 
 
-<div data-role="page" id="container">
+  <div data-role="page" id="container">
 
-	<div id="container" data-role="container">
-	    <table border = "0" cellspacing = "0" cellpadding = "0" id="periodic">
-	    </table>
-	</div><!-- /content -->
+    <h1><span id="title">Get in Your Element</span>
+    	<select id="dropdown" onchange="replaceval();">
+    		<option value="atomic_mass">Atomic Mass (g/mol)</option>
+    		<option value="electronegativity">Electronegativity</option>
+    		<option value="atomic_radius">Covalent Radius (&Aring;)</option>
+    		<option value="first_ionization_energy">First Ionization Energy (eV)</option>
+    		<option value="second_ionization_energy">Second Ionization Energy (eV)</option>
+    		<option value="third_ionization_energy">Third Ionization Energy (eV)</option>
+    	</select>
+    </h1>
 
-</div><!-- /page -->
+  	<div id="container" data-role="container">
+  	  <table border = "0" cellspacing = "0" cellpadding = "0" id="periodic">
+  		  <table cellspacing = "0" cellpadding = "0" id = "infocell">
+  			<!--<tr>
+  				<td class = "name info">Darmstadtium</td>
+  				<td></td>
+  				<td class = "right info">Electronegativity: 1.00</td>
+  			</tr>
+  			
+  			<tr>
+  				<td class = "element_symbol info">Uuo<td>
+  				<td class = "right info">
+  					Category: alkali metal
+  				</td>
+  			</tr>
+  			
+  			<tr>
+  				<td class = "info" id = "append"></td>
+  				<td></td>
+  				<td class = "right info">Covalent radius: 32pm</td>
+  			</tr>-->
+  		  </table>	
+  	  </table>
+              <!-- <div id = "a1" class="element alkalimetal">
+                  <p>
+                      <span class = "anumber">118</span>
+                      <span class = "amass">9.008</span>
+                  </p>
+                  <br>
+                  <div class="symbol">H</div>
+              </div>
+              <div class = "empty"></div>
+              <div class = "empty"></div>
+              <div id = "a2" class="element alkalimetal">
+                  <p>
+                      <span class = "anumber">118</span>
+                      <span class = "amass">9.008</span>
+                  </p>
+                  <br>
+                  <div class="symbol">H</div>
+              </div> -->
+              
+  	</div><!-- /content -->
 
-<script src = "dom.js"></script>
+  </div><!-- /page -->
+  <div class="legend" id="legend"><p class="label">low </p><img id="image"></img><p class="label"> high</p></div>
+  <!-- scripts -->
+  <script src="jquery-2.0.2.min.js"></script>
+  <script src = "script_on_ready.js"></script>
+  <script src = "dom.js"></script>
 </body>
-</html>
+</html
